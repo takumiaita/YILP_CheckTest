@@ -1,0 +1,468 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+body p {
+    color: rgb(101, 101, 101);
+    font-size: 2.0rem;
+    line-height: 6.0rem;
+}
+.container {
+    width: 110.0rem;
+    margin: 0 auto;
+}
+.br {
+    display: none;
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8.0rem;
+    color: gray;
+    font-size: 1.6rem;
+    position: relative;
+}
+header ul {
+    display: flex;
+    list-style: none;
+}
+header ul li {
+    margin-left: 4.5rem;
+}
+header img {
+    margin-bottom: 1.0rem;
+}
+.hamburger_menu {
+    display: none;
+}
+.menu_btn {
+    position: absolute;
+    top: 1.0rem;
+    right: 3.5rem;
+    display: flex;
+    height: 4.0rem;
+    width: 4.0rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color:rgb(101, 101, 101);
+}
+.menu_btn span,
+.menu_btn span:before,
+.menu_btn span:after {
+    content: '';
+    display: block;
+    height: 0.2rem;
+    width: 2.0rem;
+    border-radius: 0.2rem;
+    background-color: #ffffff;
+    position: absolute;
+    transition: all 0.5s 0s ease;
+}
+.menu_btn span:before {
+    bottom: 0.8rem;
+}
+.menu_btn span:after {
+    top: 0.8rem;
+}
+#menu_btn_check:checked ~ .menu_btn span {
+    background-color: rgba(255, 255, 255, 0);
+}
+#menu_btn_check:checked ~ .menu_btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu_btn_check:checked ~ .menu_btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+#menu_btn_check {
+    display: none;
+}
+.menu_contents {
+    width: 48.0rem;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 80;
+    background-color:rgb(101, 101, 101 ,0.9);
+    display: none;
+    transition: all 0.5s 0s ease;
+}
+#menu_btn_check:checked ~ .menu_contents {
+    left: 0;
+}
+.menu_contents ul {
+    padding: 7.0rem 0;
+    display: block;
+    width: 90%;
+}
+.menu_contents ul li {
+    border-bottom: solid 0.1rem #ffffff;
+    display: block;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    color:#ffffff;
+    padding: 0.9rem 1.5rem 1.0rem 0;
+    margin-left: 2.0rem;
+}
+.menu-content ul li ::before {
+    content: "";
+    width: 0.7rem;
+    height: 0.7rem;
+    border-top: solid 0.2rem #ffffff;
+    border-right: solid 0.2rem #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 1.1rem;
+    top: 1.6rem;
+}
+
+
+
+.p_logo {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 7.0rem;
+}
+.top {
+    padding-top: 2.0rem;
+}
+.top_img {
+    width: 100%;
+}
+.top_p {
+    text-align: center;
+}
+.top h1 {
+    font-weight:lighter;
+    font-size: 4.8rem;
+    margin-top: 5.0rem;
+}
+.top p {
+    line-height: 7.0rem;
+}
+
+
+
+.about {
+    background-image: url(/Users/macuser/Desktop/YIチェックテスト/images/長方形　1.png);
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 40.0rem;
+}
+.about .container {
+    padding-top: 20.0rem;
+}
+h1 {
+    font-weight:lighter;
+    font-size: 8.0rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.title_sub {
+    margin: -6.5rem 0 -2.0rem 0;
+    font-size: 1.5rem;
+    letter-spacing: 3.0rem;
+    margin-left: 3.0rem;
+}
+h2 {
+    font-weight:lighter;
+    font-size: 4.0rem;
+}
+.content1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.content1_p {
+    text-align: left;
+    width: 51%;
+}
+.content1_p p {
+    margin-bottom: 7.0rem;
+}
+.content1 img {
+    width: 45%;
+}
+.about2 p {
+    margin-top: 6.0rem;
+}
+
+
+
+.reasons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 185.0rem;
+}
+.reason {
+    text-align: center;
+    margin-top: -12.0rem;
+}
+.reason h1 {
+    font-weight:lighter;
+    font-size: 7.0rem;
+    margin-bottom: 6.0rem;
+}
+.reason h1 span {
+    font-size: 11.0rem;
+    margin: 0 2.0rem;
+}
+.reason .p_logo {
+    font-size: 12.0rem;
+    margin-right: 0;
+}
+.reason1 {
+    width: 47%;
+    text-align: left;
+    margin-bottom: 15.0rem;
+}
+.reason_h {
+    position: relative;
+}
+.reason_h_p {
+    display: flex;
+    height: 12.0rem;
+}
+.reason_h_p_2 {
+    height: 15.0rem;
+}
+.img_human {
+    position: absolute;
+    top: -2.0rem;
+    right: 12.0rem;
+}
+.img_kutsu {
+    position: absolute;
+    top: 3.0rem;
+    right: 8.0rem;
+}
+.img_water {
+    position: absolute;
+    top: -2.0rem;
+    right: 12.0rem;
+}
+.img_bag {
+    position: absolute;
+    top: -3.0rem;
+    right: 12.0rem;
+}
+.reason_number {
+    font-family: monospace;
+    margin-right: 1.8rem;
+    font-size: 4.8rem;
+}
+.reason p {
+    letter-spacing: -0.07rem;
+}
+.reason_graph {
+    margin-top: -1.5rem;
+}
+.reason_graph p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    letter-spacing: 0;
+    line-height: 4.0rem;
+}
+.reason_graph img {
+    display: block;
+    margin: 0 auto;
+    margin-top: -2.0rem;
+}
+
+
+
+.customer_reviews {
+    text-align: center;
+    background-image: url(/Users/macuser/Desktop/YIチェックテスト/images/長方形　2.png);
+    background-size: cover;
+    z-index: -2;
+    position: relative;
+    height: 230.0rem;
+}
+.customer_reviews .container {
+    padding-top: 30.0rem;
+}
+.review {
+    text-align: left;
+    position: relative;
+    height: 30.0rem;
+    margin-bottom: 8.0rem;
+}
+.review h2 {
+    font-size: 3.5rem;
+}
+.review p {
+    line-height: 5.0rem;
+    margin-top: -2.0rem;
+    width: 62%;
+}
+.review img {
+    position: absolute;
+    top : 1rem;
+    right: 0rem;
+    z-index: -1;
+}
+
+
+
+.products {
+    text-align: center;
+    margin-top: -15.0rem;
+    margin-bottom: 8.0rem;
+}
+.product {
+    width: 43%;
+}
+.products_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8.0rem
+}
+.product_h {
+    font-size: 2.8rem;
+    margin: 0rem;
+}
+.product_h span {
+    font-size: 4.0rem;
+    margin-right: 3.0rem;
+}
+.product_price {
+    margin-top: -1.5rem;
+}
+.product_p {
+    text-align: left;
+    line-height: 4.0rem;
+    margin-top: -1.5rem;
+}
+.tax {
+    font-size: 1.5rem;
+}
+.store {
+    width: 100%;
+    height: 10.0rem;
+    font-size: 3.0rem;
+    background-color: white;
+    color:rgb(52, 50, 57);
+    border: 0.15rem solid rgb(52, 50, 57);
+    margin-top: 4.0rem;
+}
+.store:hover {
+    background-color:rgb(52, 50, 57);
+    color: white;
+}
+.sample {
+    width: 100%;
+    margin-top: 20.0rem;
+}
+
+
+
+.FAQ {
+    text-align: center;
+}
+.FAQ h1 span {
+    font-size: 4.0rem;
+}
+.FAQ .title_sub {
+    letter-spacing: 1.5rem;
+}
+.questions {
+    margin-top: 15.0rem;
+}
+.question {
+    text-align: left;
+}
+.question h2 {
+    font-size: 3.0rem;
+    color: rgb(101, 101, 101);
+    background-color: rgb(224, 224, 224);
+    height: 6.0rem;
+    line-height: 6.0rem;
+    padding-left: 1.5rem;
+}
+.question p {
+    margin: -1.0rem 0 5.0rem 1.5rem;
+}
+
+
+
+.sponser {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-items: center;
+    width: 90%;
+    margin: 20.0rem auto 20.0rem auto;
+}
+.sponser img {
+    width: 18%;
+}
+
+
+
+footer {
+    background-color: rgb(224, 224, 224);
+    height: 27.0rem;
+    position: relative;
+}
+footer .container {
+    padding-top: 0.8rem;
+}
+footer h2 {
+    font-size: 2.5rem;
+    color: rgb(101, 101, 101);
+}
+footer p {
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+}
+.sns {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 35.0rem;
+    position: absolute;
+    top: 20.0rem;
+    right: 3.0rem;
+}
+.twitter {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    background-color: #15a7f0;
+    height: 4.0rem;
+    width: 16.0rem;
+    border-radius: 1.0rem;
+}
+.twitter p {
+    font-size: 2.6rem;
+    color: white;
+}
+.twitter img {
+    margin: auto 1.5rem auto 1.0rem;
+}
+.instagram {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    background-color: black;
+    height: 4.8rem;
+    width: 17.0rem;
+    border-radius: 1.0rem;
+}
+.instagram p {
+    font-size: 2.0rem;
+    color: white;
+}
+.instagram img {
+    margin: auto 1.5rem auto 1.0rem;
+}

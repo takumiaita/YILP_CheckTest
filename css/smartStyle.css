@@ -1,0 +1,307 @@
+@media screen and (max-width: 480px) {
+    .container {
+        width: 43.0rem;
+        margin: 0 auto;
+    }
+    body p {
+        line-height: 3.0rem;
+        font-size: 1.8rem;
+    }
+
+
+    header .container {
+        display: block;
+        height: 6.0rem;
+        box-sizing: border-box;
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        margin-top:-1.0rem;
+        z-index: 80;
+        box-shadow: 0rem 0.3rem rgba(0,0,0,0.055);
+    }
+    header img {
+        display: block;
+        margin: 1.5rem auto 1.0rem auto;
+        width: 15.0rem;
+    }
+    .hamburger_menu {
+        display: block;
+    }
+    .menu_contents {
+        display: block;
+    }
+    .pc_menu {
+        display: none;
+    }
+
+
+
+    .top {
+        padding-top: 7.0rem;
+    }
+    .br {
+        display: block;
+    }
+    .nobr {
+        display: none;
+    }
+    .p_logo {
+        font-size: 5.0rem;
+    }
+    .top h1 {
+        font-size: 3.0rem;
+        margin: 5.0rem 0;
+    }
+    .top p {
+        line-height: 4.0rem;
+    }
+
+
+
+    .about {
+        padding-bottom: 37.0rem;
+    }
+    .about .container {
+        padding-top: 10.0rem;
+    }
+    h1 {
+        font-size: 6.0rem;
+    }
+    .title_sub {
+        margin: -4.0rem 0 -2.0rem 3.0rem;
+    }
+    h2 {
+        font-size: 3.0rem;
+        margin-top: 7.0rem;
+    }
+    .about1 h2 {
+        margin-top: 5.0rem;
+    }
+    .content1 {
+        display: block;
+    }
+    .content1_p {
+        width: 90%;
+        display: inline-block;
+    }
+    .content1_p p {
+        margin: 0 auto 3.0rem auto;
+    }
+    .content1 img {
+        width: 80%;
+    }
+
+
+
+    .reason .container {
+        margin-top: -25.0rem;
+    }
+    .reason h1 {
+        font-size: 4.0rem;
+        margin-bottom: 1.0rem;
+    }
+    .reason h1 span {
+        font-size: 7.0rem;
+        margin: 0 1.0rem;
+    }
+    .reason .p_logo {
+        font-size: 7.0rem;
+    }
+    .reasons {
+        display: block;
+        height: 265.0rem;
+    }
+    .reason1 {
+        width: 90%;
+        display: inline-block;
+        margin: 0 auto 2.0rem auto;
+    }
+    .reason_number {
+        margin-right: 1.8rem;
+        margin-top: 6.7rem;
+    }
+    .reason_h_p_3 {
+        height: 12.0rem;
+    }
+    .img_human {
+        width: 10.0rem;
+        top: 2.0rem;
+        right: 4.0rem;
+    }
+    .img_kutsu {
+        width: 10.0rem;
+        top: 7.0rem;
+        right: 2.0rem;
+    }
+    .img_water {
+        width: 10.0rem;
+        top: 5.0rem;
+        right: 4.0rem;
+    }
+    .img_bag {
+        width: 10.0rem;
+        top: 2.0rem;
+        right: 3.0rem;
+    }
+    .reason_graph {
+        margin-top: -1.0rem;
+    }
+    .reason_graph p {
+        font-size: 2.0rem;
+        letter-spacing: 0;
+        line-height: 3.0rem;
+    }
+    .reason_graph img {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        margin-top: -0.5rem;
+    }
+
+
+
+    .customer_reviews {
+        height: 275.0rem;
+        padding-bottom:30.0rem;
+    }
+    .customer_reviews .container {
+        padding-top: 20.0rem;
+    }
+    .review {
+        height: 50.0rem;
+        margin-bottom: 3.0rem;
+    }
+    .reviews {
+        margin-top: 5.0rem;
+    }
+    .review h2 {
+        font-size: 2.5rem;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom:0.5rem;
+    }
+    .review p {
+        line-height: 3.0rem;
+        margin-top: -2.0rem;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    .review img {
+        position: absolute;
+        top: 29.0rem;
+        right: 2.0rem;
+        z-index: -1;
+        width: 100%;
+    }
+    .review2 {
+        height: 45.0rem;
+    }
+    .review2 img {
+        top: 23.0rem;
+    }
+    .review3,.review4 {
+        height: 55.0rem;
+    }
+    .review3 img,.review4 img {
+        top: 33.0rem;
+    }
+
+
+
+    .products {
+        margin-top: -35.0rem;
+    }
+    .products_container {
+        display: block;
+        margin-top: 8.0rem
+    }
+    .product {
+        width: 90%;
+        display: block;
+        margin: 0 auto 8.0rem auto; 
+    }
+    .product img {
+        width: 90%;
+    }
+    .product_h {
+        font-size: 2.5rem;
+        margin-top: 1.0rem;
+    }
+    .product_price {
+        margin-top: 1.0rem;
+        line-height: 2.5rem;
+    }
+    .product_p {
+        line-height: 3.0rem;
+        display: block;
+        margin-top: 2.0rem;
+    }
+    .store {
+        width: 100%;
+        height: 7.0rem;
+        margin-top: 1.0rem;
+    }
+    .sample {
+        margin: 2.0rem auto 10.0rem auto;
+    }
+
+
+
+    .FAQ h1 span {
+        font-size: 2.5rem;
+    }
+    .questions {
+        margin-top: 5.0rem;
+    }
+    .question h2 {
+        font-size: 2.0rem;
+        height: 5.0rem;
+        line-height: 5.0rem;
+        padding-left: 1.0rem;
+        margin-top: 0rem;
+    }
+    .question p {
+        font-size: 1.6rem;
+        margin: -1.5rem 0 2.0rem 0.5rem;
+    }
+
+
+    .sponser {
+        margin: 15.0rem auto 5.0rem auto;
+    }
+    .sponser img {
+        width: 45%;
+        margin: 0.5rem 0;
+    }
+
+
+    footer h2 {
+        font-size: 2.0rem;
+        margin-top: 8.0rem;
+        margin-bottom: 0.2rem;
+    }
+    footer p {
+        font-size: 1.6rem;
+        line-height: 1.0rem;
+    }
+    .sns {
+        display: block;
+        width: 16.0rem;
+        top: 16.0rem;
+        right: 0.75rem;
+    }
+    .twitter {
+        margin-bottom: 0.5rem;
+    }
+    .instagram {
+        width: 16.0rem;
+    }
+    .instagram img {
+        margin: auto 1.5rem auto 0.5rem;
+    }
+  
+
+}
