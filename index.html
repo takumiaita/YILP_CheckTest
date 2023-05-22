@@ -1,51 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>b-blow</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/smartStyle.css">
 </head>
 <body>
     <header>
+        <div class="fixed">
         <div class="container">
-            <img src="/Users/macuser/Desktop/YIチェックテスト/images/ロゴ.png">
+            <a href="#"><img src="images/ロゴ.png"></a>
             <ul class="pc_menu">
-                <li>ABOUT</li>
-                <li>CUSTOMER REVIEWS</li>
-                <li>PRODUCTS</li>
-                <li>FAQ</li>
-                <li>ONLINESTORE</li>
+                <li class="menu"><a href="#about">ABOUT</a></li>
+                <li class="menu"><a href="#reviews">CUSTOMER REVIEWS</a></li>
+                <li class="menu"><a href="#product">PRODUCTS</a></li>
+                <li class="menu"><a href="#FAQ">FAQ</a></li>
+                <li class="menu"><a href="#">ONLINESTORE</a></li>
             </ul>
             <div class="hamburger_menu">
                 <input type="checkbox" id="menu_btn_check">
                 <label for="menu_btn_check" class="menu_btn"><span></span></label>
                 <div class="menu_contents">
                     <ul>
-                        <li>ABOUT</li>
-                        <li>CUSTOMER REVIEWS</li>
-                        <li>PRODUCTS</li>
-                        <li>FAQ</li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#reviews">CUSTOMER REVIEWS</a></li>
+                        <li><a href="#product">PRODUCTS</a></li>
+                        <li><a href="#FAQ">FAQ</a></li>
                         <li>ONLINESTORE</li>
                     </ul>
                 </div>
             </div>
         </div>
+        </div>
     </header>
     <main>
         <div class="top">
             <div class="container">
-                <img src="/Users/macuser/Desktop/YIチェックテスト/images/メイン.png" class="top_img">
+                <img src="images/メイン.png" class="top_img">
                 <div class="top_p">
-                    <h1>除菌だってこだわりたい、<br>そんなあなたのために<br class="br"><span class="p_logo">b-blow</span>は誕生しました。</h1>
-                    <p>
+                    <h1 class="scroll_up scroll_up--up">除菌だってこだわりたい、<br>そんなあなたのために<br class="br"><span class="p_logo">b-blow</span>は誕生しました。</h1>
+                    <p class="scroll_up scroll_up--up">
                         従来の除菌剤だと<br class="br">においが気になってなかなか使えない・・・。<br>
                         子どもにも使いたいから、<br class="br">刺激が強いものはなるべく避けたい・・・。<br>
-                        おうちの除菌を一本で済ませたい・・・。
+                        おうちの除菌を一本で済ませたい・・・。<br>
                     </p>
-                    <p>
+                    <p class="scroll_up scroll_up--up">
                         b-blowなら、あなたのこだわりを全て叶えます。<br>
                         さっそく、実感できる<br class="br">こだわり除菌はじめてみませんか？
                     </p>
@@ -54,7 +57,7 @@
         </div>
         <div class="about">
             <div class="container">
-                <h1>ABOUT</h1>
+                <h1 id="about">ABOUT</h1>
                 <p class="title_sub">商品概要</p>
                 <div class="about1">
                     <h2>次世代の除菌成分、<br class="br">ポリヘキサニドって何？</h2>
@@ -69,7 +72,7 @@
                                 さらには新型コロナウイルスと同じえんエンベロープ型のウイルスにも効果があることが証明されています。
                             </p>
                         </div>
-                        <img src="/Users/macuser/Desktop/YIチェックテスト/images/散布図.png">
+                        <img src="images/散布図.png" class="scroll_up2 scroll_up--r">
                     </div>
                 </div>
                 <div class="about2">
@@ -81,7 +84,7 @@
                                 ポリヘキサニドはほとんど無臭なのでアルコールなどの独特なにおいが苦手な方でも安心して使えますし、肌への刺激も少ないので人を選ばずご利用いただけます。
                             </p>
                         </div>
-                        <img src="/Users/macuser/Desktop/YIチェックテスト/images/比較表.png">
+                        <img src="images/比較表.png" class="scroll_up2 scroll_up--r">
                     </div>
                 </div>
             </div>
@@ -95,7 +98,7 @@
                             <div class="reason_h_p">
                                 <h2 class="reason_number">01</h2><h2>高い安全性</h2>
                             </div>
-                            <img class="img_human" src="/Users/macuser/Desktop/YIチェックテスト/images/ヒト.png">
+                            <img class="img_human pop" src="images/ヒト.png">
                         </div>
                         <p>
                             化粧品などにも使われている成分を使用しているため、お肌が弱い方、お子様にも安心して使用することができます。<br>
@@ -103,7 +106,7 @@
                         </p>
                         <div class="reason_graph">
                             <p>刺激がなく安全だと感じましたか？</p>
-                            <img src="/Users/macuser/Desktop/YIチェックテスト/images/88％.png">
+                            <img src="images/88％.png">
                         </div>
                     </div>
                     <div class="reason1">
@@ -111,7 +114,7 @@
                             <div class="reason_h_p">
                                 <h2 class="reason_number">02</h2><h2>消臭効果が長続き</h2>
                             </div>
-                            <img  class="img_kutsu" src="/Users/macuser/Desktop/YIチェックテスト/images/クツ.png">
+                            <img  class="img_kutsu pop" src="images/クツ.png">
                         </div>
                         <p>
                             優れた包摂力を生かして、臭いを取り込み酸化・分解して消臭します。<br>
@@ -120,7 +123,7 @@
                         </p>
                         <div class="reason_graph">
                             <p>消臭効果の維持を実感できましたか？</p>
-                            <img src="/Users/macuser/Desktop/YIチェックテスト/images/80％.png">
+                            <img src="images/80％.png">
                         </div>
                     </div>
                     <div class="reason1">
@@ -128,15 +131,15 @@
                             <div class="reason_h_p reason_h_p_2">
                                 <h2 class="reason_number">03</h2><h2>水に濡れても<br>落ちにくい</h2>
                             </div>
-                            <img  class="img_water" src="/Users/macuser/Desktop/YIチェックテスト/images/ミズ.png">
+                            <img  class="img_water pop" src="images/ミズ.png">
                         </div>
                         <p>
                             水やお湯でも揮発することなく効果を発揮します。<br>
                             ご自宅の浴槽水や洗面所・キッチンなどの水回りにもご利用いただけます。<br>
                         </p>
-                        <div class="reason_graph">
+                        <div class="reason_graph reason_graph2">
                             <p>水回りのイヤな臭いは<br>消えましたか？</p>
-                            <img src="/Users/macuser/Desktop/YIチェックテスト/images/82％.png">
+                            <img src="images/82％.png">
                         </div>
                     </div>
                     <div class="reason1">
@@ -144,14 +147,14 @@
                             <div class="reason_h_p reason_h_p_2 reason_h_p_3">
                                 <h2 class="reason_number">04</h2><h2>素材にやさしい<br><br></h2>
                             </div>
-                            <img  class="img_bag" src="/Users/macuser/Desktop/YIチェックテスト/images/カバン.png">
+                            <img  class="img_bag pop" src="images/カバン.png">
                         </div>
                         <p>
                             色落ちや金属部分の腐食が気になるお洋服や、普段消毒したくてもなかなかできない鞄など、アルコールや次亜塩素酸では使い辛い素材でも使用ができます。
                         </p>
-                        <div class="reason_graph">
+                        <div class="reason_graph reason_graph2">
                             <p>素材が痛むなどトラブルは<br>ありませんでしたか？</p>
-                            <img src="/Users/macuser/Desktop/YIチェックテスト/images/90%.png">
+                            <img src="images/90%.png">
                         </div>
                     </div>
                 </div>
@@ -159,53 +162,53 @@
         </div>
         <div class="customer_reviews">
             <div class="container">
-                <h1>CUSTOMER REVIEWS</h1>
+                <h1 id="reviews">CUSTOMER REVIEWS</h1>
                 <p class="title_sub">お客様の声</p>
                 <div class="reviews">
-                    <div class="review">
+                    <div class="review scroll_up scroll_up--l">
                         <h2>"安心して子供にも使えます！"</h2>
-                        <p>今まではアルコールで消毒してましたが、子供がいるため部屋全体に吹きかけたり、子供の手に直接使うことが出来ませんでした。<br>
+                        <p>今まではアルコールで消毒してましたが、子供がいるため部屋全体に<br class="nobr">吹きかけたり、子供の手に直接使うことが出来ませんでした。<br>
                             子供にも害のない成分を使っていると友人から聞いたので愛用しています。<br>
                             気づいたら無くなってたので、詰め替え用も買いました！<br>
                             31歳（女性）
                         </p>
-                        <img src="/Users/macuser/Desktop/YIチェックテスト/images/お客様の声　1.png">
+                        <img src="images/お客様の声　1.png">
                     </div>
-                    <div class="review review2">
+                    <div class="review review2 review scroll_up scroll_up--r">
                         <h2>"低刺激だから重宝しています。"</h2>
                         <p>仕事柄、お客様と接する機会が多いため常に持ち歩いています。<br>
                             今までアルコール消毒だと手荒れがひどいのが悩みでしたが、今は全く気にならなくなったので、本当に買ってよかたなと思っています。<br>
                             36歳（男性）
                         </p>
-                        <img src="/Users/macuser/Desktop/YIチェックテスト/images/お客様の声　4.png">
+                        <img src="images/お客様の声　4.png">
                     </div>
-                    <div class="review review3">
+                    <div class="review review3 review scroll_up scroll_up--l">
                         <h2>"アルコールの臭いが苦手な私でも使える！"</h2>
                         <p>アルコール特有のきつい臭いが苦手で、今まではこまめに手洗いをして感染症対策をしていました。<br>
                             使ってみると全然臭いもないし、使っていてとても安心感があります。<br>
                             自宅用に一本と、持ち運び用に一本ずつ購入させていただきました。<br>
                             52歳（女性）
                         </p>
-                        <img src="/Users/macuser/Desktop/YIチェックテスト/images/お客様の声　3.png">
+                        <img src="images/お客様の声　3.png">
                     </div>
-                    <div class="review review4">
+                    <div class="review review4 review scroll_up scroll_up--r">
                         <h2>"持ち運びやすいサイズとデザインです。"</h2>
                         <p>外出するときは、肌身離さず持ち歩いています！電車に乗った後や、食事をする前に使っていて、きつい臭いもしないのでとっても重宝しています。<br>
                             カバンにもすっぽり収まる大きさで、ボトルのデザインもシンプルなので周りの目も全然気になりません。<br>
                             28歳（女性）
                         </p>
-                        <img src="/Users/macuser/Desktop/YIチェックテスト/images/お客様の声　2.png">
+                        <img src="images/お客様の声　2.png">
                     </div>
                 </div>
             </div>
         </div>
         <div class="products">
             <div class="container">
-                <h1>PRODUCTS</h1>
+                <h1 id="product">PRODUCTS</h1>
                 <p class="title_sub">商品紹介</p>
                 <div class="products_container">
                     <div class="product">
-                        <img src="/Users/macuser/Desktop/YIチェックテスト/images/スプレー２本.png">
+                        <img src="images/スプレー２本.png" class="scroll_up2 scroll_up--up">
                         <p class="product_h"><span>b-blow</span>除菌ミストスプレー</p>
                         <p class="product_price">希望小売価格 <br class="br">100ml/800円<span class="tax">(税抜)</span>300ml/1600円<span class="tax">(税抜)</span></p>
                         <p class="product_p">
@@ -215,7 +218,7 @@
                         <input type="button" value="ONLINE STORE" class="store">
                     </div>
                     <div class="product">
-                        <img src="/Users/macuser/Desktop/YIチェックテスト/images/詰め替え写真.png">
+                        <img src="images/詰め替え写真.png" class="scroll_up2 scroll_up--up">
                         <p class="product_h"><span>b-blow</span>詰め替え用ボトル</p>
                         <p class="product_price">希望小売価格 <br class="br">1000ml/2500円<span class="tax">(税抜)</span></p>
                         <p class="product_p">
@@ -225,12 +228,12 @@
                         <input type="button" value="ONLINE STORE" class="store">
                     </div>
                 </div>
-                <img class="sample" src="/Users/macuser/Desktop/YIチェックテスト/images/スプレー.png">
+                <img class="sample" src="images/スプレー.png">
             </div>
         </div>
         <div class="FAQ">
             <div class="container">
-                <h1>F<span>REAQUENTLY</span>A<span>SKED</span>Q<span>UESTIONS</span></h1>
+                <h1 id="FAQ">F<span>REAQUENTLY</span>A<span>SKED</span>Q<span>UESTIONS</span></h1>
                 <p class="title_sub">よくある質問</p>
                 <div class="questions">
                     <div class="question">
@@ -278,16 +281,16 @@
         <div class="sponsers">
             <div class="container">
                 <div class="sponser">
-                    <img src="/Users/macuser/Desktop/YIチェックテスト/images/掲載@朝日.png">
-                    <img src="/Users/macuser/Desktop/YIチェックテスト/images/掲載@nifty.png">
-                    <img src="/Users/macuser/Desktop/YIチェックテスト/images/掲載@読売.png">
-                    <img src="/Users/macuser/Desktop/YIチェックテスト/images/掲載@excite.png">
-                    <img src="/Users/macuser/Desktop/YIチェックテスト/images/掲載@zakzak.png">
-                    <img src="/Users/macuser/Desktop/YIチェックテスト/images/掲載@SANSPO.png">
-                    <img src="/Users/macuser/Desktop/YIチェックテスト/images/掲載@Mapion.png">
-                    <img src="/Users/macuser/Desktop/YIチェックテスト/images/掲載@SankeiBiz.png">
-                    <img src="/Users/macuser/Desktop/YIチェックテスト/images/掲載@財経.png">
-                    <img src="/Users/macuser/Desktop/YIチェックテスト/images/掲載@Response.png">
+                    <img src="images/掲載@朝日.png">
+                    <img src="images/掲載@nifty.png">
+                    <img src="images/掲載@読売.png">
+                    <img src="images/掲載@excite.png">
+                    <img src="images/掲載@zakzak.png">
+                    <img src="images/掲載@SANSPO.png">
+                    <img src="images/掲載@Mapion.png">
+                    <img src="images/掲載@SankeiBiz.png">
+                    <img src="images/掲載@財経.png">
+                    <img src="images/掲載@Response.png">
                 </div>
             </div>
         </div>
@@ -303,14 +306,15 @@
         </div>
         <div class="sns">
             <div class="twitter">
-                <img src="/Users/macuser/Desktop/YIチェックテスト/images/ツイッター.png">
+                <img src="images/ツイッター.png">
                 <p>Twitter</p>
             </div>
             <div class="instagram">
-                <img src="/Users/macuser/Desktop/YIチェックテスト/images/インスタ.png">
+                <img src="images/インスタ.png">
                 <p>Instagram</p>
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script> 
 </body>
 </html>

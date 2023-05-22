@@ -10,14 +10,21 @@ body p {
     line-height: 6.0rem;
 }
 .container {
-    width: 110.0rem;
+    /* width: 110rem; */
+    width: 87%;
     margin: 0 auto;
 }
 .br {
     display: none;
 }
 
-
+/* header */
+.fixed {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 100;
+}
 header .container {
     display: flex;
     justify-content: space-between;
@@ -34,16 +41,38 @@ header ul {
 header ul li {
     margin-left: 4.5rem;
 }
-header img {
-    margin-bottom: 1.0rem;
+header a {
+    text-decoration: none;
+    color: gray;
 }
+.menu {
+    position: relative;
+}
+
+.menu::after {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0.4rem;
+    left: -2%;
+    bottom: -0.6rem;
+    background-color: rgb(101, 101, 101, 0.5);
+    transition: .3s;
+}
+
+.menu:hover::after {
+    width: 104%;
+}
+/* header img {
+    margin-bottom: 0.0rem;
+} */
 .hamburger_menu {
     display: none;
 }
 .menu_btn {
     position: absolute;
-    top: 1.0rem;
-    right: 3.5rem;
+    top: 1.5rem;
+    right: 2.0rem;
     display: flex;
     height: 4.0rem;
     width: 4.0rem;
@@ -112,26 +141,23 @@ header img {
     padding: 0.9rem 1.5rem 1.0rem 0;
     margin-left: 2.0rem;
 }
-.menu-content ul li ::before {
-    content: "";
-    width: 0.7rem;
-    height: 0.7rem;
-    border-top: solid 0.2rem #ffffff;
-    border-right: solid 0.2rem #ffffff;
-    transform: rotate(45deg);
-    position: absolute;
-    right: 1.1rem;
-    top: 1.6rem;
+.menu_contents ul li a {
+    color:#ffffff;
 }
 
+/* jump */
+#about, #reviews,#product,#FAQ {
+    padding-top: 10.0rem;
+    margin-top: -10.0rem;
+}
 
-
+/* top */
 .p_logo {
     font-family:'Times New Roman', Times, serif;
     font-size: 7.0rem;
 }
 .top {
-    padding-top: 2.0rem;
+    padding-top: 10.0rem;
 }
 .top_img {
     width: 100%;
@@ -143,21 +169,23 @@ header img {
     font-weight:lighter;
     font-size: 4.8rem;
     margin-top: 5.0rem;
+    margin-bottom: 3.0rem;
 }
 .top p {
     line-height: 7.0rem;
+    margin-bottom: 3.0rem;
 }
 
 
-
+/* about */
 .about {
-    background-image: url(/Users/macuser/Desktop/YIチェックテスト/images/長方形　1.png);
+    background-image: url(../images/squere.1.png);
     background-size: cover;
     text-align: center;
     padding-bottom: 40.0rem;
 }
 .about .container {
-    padding-top: 20.0rem;
+    padding-top: 25.0rem;
 }
 h1 {
     font-weight:lighter;
@@ -165,7 +193,7 @@ h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .title_sub {
-    margin: -6.5rem 0 -2.0rem 0;
+    margin: -1.0rem 0 2.0rem 0;
     font-size: 1.5rem;
     letter-spacing: 3.0rem;
     margin-left: 3.0rem;
@@ -173,6 +201,7 @@ h1 {
 h2 {
     font-weight:lighter;
     font-size: 4.0rem;
+    margin-bottom: 2.0rem;
 }
 .content1 {
     display: flex;
@@ -182,28 +211,31 @@ h2 {
 .content1_p {
     text-align: left;
     width: 51%;
+    margin-top: 3.0rem;
 }
 .content1_p p {
-    margin-bottom: 7.0rem;
+    margin-bottom: 5.0rem;
 }
 .content1 img {
     width: 45%;
+}
+.about1 {
+    margin-bottom: 6.0rem;
 }
 .about2 p {
     margin-top: 6.0rem;
 }
 
 
-
+/* reason */
 .reasons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 185.0rem;
 }
 .reason {
     text-align: center;
-    margin-top: -12.0rem;
+    margin-top: -2.0rem;
 }
 .reason h1 {
     font-weight:lighter;
@@ -219,38 +251,39 @@ h2 {
     margin-right: 0;
 }
 .reason1 {
-    width: 47%;
+    width: 47.5%;
     text-align: left;
-    margin-bottom: 15.0rem;
+    margin-bottom: 0rem;
 }
 .reason_h {
     position: relative;
 }
 .reason_h_p {
     display: flex;
-    height: 12.0rem;
+    height: 9.0rem;
 }
 .reason_h_p_2 {
-    height: 15.0rem;
+    height: 12.0rem;
+    margin-top:17.0rem;
 }
 .img_human {
     position: absolute;
-    top: -2.0rem;
-    right: 12.0rem;
+    top: -5.0rem;
+    right: 15.0rem;
 }
 .img_kutsu {
     position: absolute;
-    top: 3.0rem;
+    top: 0rem;
     right: 8.0rem;
 }
 .img_water {
     position: absolute;
-    top: -2.0rem;
+    top: -6.0rem;
     right: 12.0rem;
 }
 .img_bag {
     position: absolute;
-    top: -3.0rem;
+    top: -7.0rem;
     right: 12.0rem;
 }
 .reason_number {
@@ -260,9 +293,10 @@ h2 {
 }
 .reason p {
     letter-spacing: -0.07rem;
+    line-height: 5.0rem;
 }
 .reason_graph {
-    margin-top: -1.5rem;
+    margin-top: 1.5rem;
 }
 .reason_graph p {
     text-align: center;
@@ -274,21 +308,36 @@ h2 {
 .reason_graph img {
     display: block;
     margin: 0 auto;
-    margin-top: -2.0rem;
+    margin-top: 1.0rem;
+}
+.reason_graph2 {
+    position: relative;
+}
+.reason_graph2 p {
+    position: absolute;
+    top: 8.0rem;
+    left: 12.0rem;
+    font-weight: normal;
 }
 
 
-
+/* customer_reviews */
 .customer_reviews {
     text-align: center;
-    background-image: url(/Users/macuser/Desktop/YIチェックテスト/images/長方形　2.png);
+    background-image: url(../images/squere.2.png);
     background-size: cover;
     z-index: -2;
     position: relative;
-    height: 230.0rem;
 }
 .customer_reviews .container {
     padding-top: 30.0rem;
+}
+.customer_reviews .title_sub{
+    margin-top: -2.0rem;
+}
+.reviews {
+    margin-top: 6.0rem;
+    padding-bottom: 28.0rem;
 }
 .review {
     text-align: left;
@@ -312,19 +361,22 @@ h2 {
 }
 
 
-
+/* product */
 .products {
     text-align: center;
-    margin-top: -15.0rem;
+    margin-top: -6.0rem;
     margin-bottom: 8.0rem;
 }
 .product {
     width: 43%;
 }
+.product img {
+    width:100%;
+}
 .products_container {
     display: flex;
     justify-content: space-between;
-    margin-top: 8.0rem
+    margin-top: 5.0rem
 }
 .product_h {
     font-size: 2.8rem;
@@ -340,7 +392,6 @@ h2 {
 .product_p {
     text-align: left;
     line-height: 4.0rem;
-    margin-top: -1.5rem;
 }
 .tax {
     font-size: 1.5rem;
@@ -364,7 +415,7 @@ h2 {
 }
 
 
-
+/* FAQ */
 .FAQ {
     text-align: center;
 }
@@ -375,7 +426,7 @@ h2 {
     letter-spacing: 1.5rem;
 }
 .questions {
-    margin-top: 15.0rem;
+    margin-top: 12.0rem;
 }
 .question {
     text-align: left;
@@ -405,10 +456,11 @@ h2 {
 }
 .sponser img {
     width: 18%;
+    margin-bottom: 3.0rem;
 }
 
 
-
+/* footer */
 footer {
     background-color: rgb(224, 224, 224);
     height: 27.0rem;
@@ -420,10 +472,14 @@ footer .container {
 footer h2 {
     font-size: 2.5rem;
     color: rgb(101, 101, 101);
+    margin-top: 2.0rem;
+    margin-bottom: 1.0rem;
 }
 footer p {
     font-size: 1.6rem;
-    line-height: 2.0rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.2srem;
+
 }
 .sns {
     display: flex;
@@ -466,3 +522,42 @@ footer p {
 .instagram img {
     margin: auto 1.5rem auto 1.0rem;
 }
+
+/* animation */
+.scroll_up {
+    opacity: 0;
+    transition: all 1.2s ease;
+}
+.scroll_up2 {
+    opacity: 0;
+    transition: all .8s ease;
+}
+.scroll_up.show,.scroll_up2.show{
+    opacity: 1;
+    transform: none;
+} 
+.scroll_up--up {
+    transform: translate(0, 10.0rem);
+}
+.scroll_up--r {
+    transform: translate(10.0rem, 0);
+}
+.scroll_up--l {
+    transform: translate(-10.0rem, 0);
+}
+
+/* popup animation */
+.pop.pop_up {
+    animation: 0.3s popping;
+}
+@keyframes popping {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(150%,150%);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+  }

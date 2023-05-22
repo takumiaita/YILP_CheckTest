@@ -1,4 +1,7 @@
 @media screen and (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
     .container {
         width: 43.0rem;
         margin: 0 auto;
@@ -63,13 +66,13 @@
         padding-bottom: 37.0rem;
     }
     .about .container {
-        padding-top: 10.0rem;
+        padding-top: 15.0rem;
     }
     h1 {
         font-size: 6.0rem;
     }
     .title_sub {
-        margin: -4.0rem 0 -2.0rem 3.0rem;
+        margin: 0rem 0 -2.0rem 3.0rem;
     }
     h2 {
         font-size: 3.0rem;
@@ -84,6 +87,7 @@
     .content1_p {
         width: 90%;
         display: inline-block;
+        margin-top: 0rem;
     }
     .content1_p p {
         margin: 0 auto 3.0rem auto;
@@ -95,7 +99,7 @@
 
 
     .reason .container {
-        margin-top: -25.0rem;
+        margin-top: -20.0rem;
     }
     .reason h1 {
         font-size: 4.0rem;
@@ -110,16 +114,21 @@
     }
     .reasons {
         display: block;
-        height: 265.0rem;
     }
     .reason1 {
         width: 90%;
         display: inline-block;
         margin: 0 auto 2.0rem auto;
     }
+    .reason1 p {
+        margin-top: 5.0rem;
+    }
     .reason_number {
         margin-right: 1.8rem;
         margin-top: 6.7rem;
+    }
+    .reason_h_p_2 {
+        margin-top:0rem;
     }
     .reason_h_p_3 {
         height: 12.0rem;
@@ -145,7 +154,7 @@
         right: 3.0rem;
     }
     .reason_graph {
-        margin-top: -1.0rem;
+        margin-top: -3.0rem;
     }
     .reason_graph p {
         font-size: 2.0rem;
@@ -156,7 +165,16 @@
         display: block;
         margin: 0 auto;
         width: 80%;
-        margin-top: -0.5rem;
+        margin-top: 0rem;
+    }
+    .reason_graph2 {
+        position: relative;
+    }
+    .reason_graph2 p {
+        position: relative;
+        top: 0rem;
+        left: 0rem;
+        font-weight: bold;
     }
 
 
@@ -167,6 +185,9 @@
     }
     .customer_reviews .container {
         padding-top: 20.0rem;
+    }
+    .customer_reviews .title_sub {
+        margin-top: 0;
     }
     .review {
         height: 50.0rem;
@@ -280,12 +301,12 @@
 
     footer h2 {
         font-size: 2.0rem;
-        margin-top: 8.0rem;
+        margin-top: 6.0rem;
         margin-bottom: 0.2rem;
     }
     footer p {
         font-size: 1.6rem;
-        line-height: 1.0rem;
+        line-height: 3.0rem;
     }
     .sns {
         display: block;
